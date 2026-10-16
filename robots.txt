@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://markhamideas.org/sitemap.xml
