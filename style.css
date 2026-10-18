@@ -26,3 +26,12 @@
 .dialogue-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:24px}.dialogue-index a{display:block;padding-top:16px;border-top:1px solid var(--copper);color:var(--ink);text-decoration:none}.dialogue-index span{font-size:23px;line-height:1.3;display:block}.dialogue-index time{display:block;font:11px/1.6 Arial,Helvetica,sans-serif;color:var(--muted);margin:10px 0}.dialogue-index small{display:block;font-size:15px;line-height:1.65;color:var(--muted)}.dialogue-index a:hover span{color:var(--copper)}
 .standalone-dialogue .page-title{font-size:clamp(42px,6vw,72px)}.dialogue-byline{font-size:14px!important;color:var(--muted)!important;margin-bottom:30px}.standalone-dialogue .conversation-art{margin:30px 0;width:100%}.standalone-dialogue .conversation-art img{display:block;width:100%;height:auto;max-height:540px;object-fit:contain;object-position:left}.related-dialogues{font-size:18px;line-height:1.8}.related-dialogues a,.standalone-dialogue .kicker a{color:var(--ink);text-decoration-color:var(--copper);text-underline-offset:4px}.back-to-top{text-align:right;margin-top:40px}.back-to-top a{color:var(--ink)}
 @media(max-width:760px){.dialogue-index{grid-template-columns:1fr}.dialogue-index a{padding:18px 0}.standalone-dialogue .conversation-art img{max-height:none}}
+
+/* Phone navigation: predictable rows and comfortable touch targets. */
+@media(max-width:600px){
+  .site-header{align-items:stretch;gap:16px;padding-top:20px;padding-bottom:18px}
+  .site-header .wordmark{align-self:flex-start;flex-shrink:0}
+  .site-header .site-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:0 16px;align-items:stretch;justify-content:stretch}
+  .site-header .site-nav a{display:flex;align-items:center;min-width:0;min-height:44px;padding:10px 0;font-size:11px;line-height:1.45;letter-spacing:.06em;white-space:normal;overflow-wrap:anywhere;border-bottom:1px solid var(--line)}
+  .site-header .site-nav a:hover,.site-header .site-nav a:focus-visible,.site-header .site-nav a[aria-current="page"]{border-bottom-color:var(--copper);color:var(--ink)}
+}
