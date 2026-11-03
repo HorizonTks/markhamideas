@@ -37,7 +37,6 @@
 
 </div>
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('go-back').addEventListener('click',function(){
 try{if(document.referrer){const previous=new URL(document.referrer);if(previous.origin===window.location.origin){window.location.href=previous.href;return;}}}catch(e){}
 window.location.href='/';
