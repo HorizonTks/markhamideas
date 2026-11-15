@@ -1,0 +1,10 @@
+.site-nav a.nav-new-link{display:inline-flex;align-items:center;gap:.35rem}
+.new-badge,.content-new,.index-new,.nav-new{width:auto;height:auto;object-fit:contain}
+.nav-new{width:24px;flex:0 0 24px}
+.content-new{width:43px;display:block;margin:0 0 .45rem}
+.index-new{width:28px;display:block;margin-bottom:.3rem}
+.research-note .content-new,.markham-now h3 .content-new{width:34px;display:inline-block;vertical-align:middle;margin:0 .45rem .14rem 0}
+.markham-now h3{margin-top:2rem}
+.issue-nav{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1.1rem 0}
+.markham-now li+li{margin-top:.75rem}
+@media(max-width:600px){.site-header .site-nav a.nav-new-link{display:flex}.nav-new{width:21px;flex-basis:21px}}
